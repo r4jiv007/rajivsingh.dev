@@ -153,29 +153,29 @@ export default function Home() {
     }
   ];
 
-  // Side projects data
-  const sideProjects = [
-    {
-      name: "Vedantu SuperCoders",
-      description: "This app is to book the demo sessions for super-coder training for kids"
-    },
-    {
-      name: "7awish(hawish)",
-      description: "7awish is the first mobile application loyalty program in Jordan. Worked on Rest-API integration, Custom Animations, Google Maps, push notification, third-party lib integration like- Volley, Picasso, QrReader"
-    },
-    {
-      name: "Orderly",
-      description: "Orderly is a supply chain management app. Was responsible for developing order scheduling/rescheduling module."
-    },
-    {
-      name: "Mimba",
-      description: "Worked on Android app and DevOps on AWS"
-    },
-    {
-      name: "desertadventures.com",
-      description: "Worked on migration of WordPress-based website from shared hosting to DigitalOcean. Configuring Droplets, nginx configuration."
-    }
-  ];
+  // // Side projects data
+  // const sideProjects = [
+  //   {
+  //     name: "Vedantu SuperCoders",
+  //     description: "This app is to book the demo sessions for super-coder training for kids"
+  //   },
+  //   {
+  //     name: "7awish(hawish)",
+  //     description: "7awish is the first mobile application loyalty program in Jordan. Worked on Rest-API integration, Custom Animations, Google Maps, push notification, third-party lib integration like- Volley, Picasso, QrReader"
+  //   },
+  //   {
+  //     name: "Orderly",
+  //     description: "Orderly is a supply chain management app. Was responsible for developing order scheduling/rescheduling module."
+  //   },
+  //   {
+  //     name: "Mimba",
+  //     description: "Worked on Android app and DevOps on AWS"
+  //   },
+  //   {
+  //     name: "desertadventures.com",
+  //     description: "Worked on migration of WordPress-based website from shared hosting to DigitalOcean. Configuring Droplets, nginx configuration."
+  //   }
+  // ];
 
   // Education data
   const education = {
@@ -363,12 +363,12 @@ export default function Home() {
           >
             Experience
           </button>
-          <button 
+          {/* <button 
             className={`${styles.tabButton} ${activeTab === 'projects' ? styles.activeTab : ''}`}
             onClick={() => setActiveTab('projects')}
           >
             Projects
-          </button>
+          </button> */}
           <button 
             className={`${styles.tabButton} ${activeTab === 'skills' ? styles.activeTab : ''}`}
             onClick={() => setActiveTab('skills')}
@@ -434,7 +434,7 @@ export default function Home() {
           )}
 
           {/* Side Projects with hover effects */}
-          {activeTab === 'projects' && (
+          {/* {activeTab === 'projects' && (
             <div className={styles.section}>
               <h2 className={styles.sectionTitle}>Side Projects</h2>
               <div className={styles.projectsGrid}>
@@ -452,7 +452,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
-          )}
+          )} */}
 
           {/* Skills with improved layout */}
           {activeTab === 'skills' && (
