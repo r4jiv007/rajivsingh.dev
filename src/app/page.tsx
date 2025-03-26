@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '@/styles/Home.module.css';
 
 // Define our color palettes
@@ -887,6 +888,9 @@ export default function Home() {
           >
             Education
           </button>
+          <Link href="/blog" className={styles.tabButton}>
+            Blog
+          </Link>
         </div>
 
         {/* Content Section with animations */}
@@ -975,7 +979,7 @@ export default function Home() {
                   >
                     <h3 className={styles.skillCategoryName}>{category.toUpperCase()}</h3>
                     <ul className={styles.skillList}>
-                      {items.map((item, i) => (
+                      {items.map((item: string, i: number) => (
                         <li key={i}>{item}</li>
                       ))}
                     </ul>
